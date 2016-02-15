@@ -34,7 +34,7 @@ body {
 /* ~~ Element/tag selectors ~~ */
 ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 }
 h3, h4, h5, h6, p {
 	font-family: BrandonGrotesqueWeb-Bold;
@@ -49,14 +49,15 @@ h1 {
 	font-size: 28pt;
 	margin: 0 auto;
 	padding-top: 50px;
-	width: 100%;
+	width: auto;
 }
 
 h2 {
 	font-family: Bookmania-Bold;
 	font-size: 28pt;
 	margin: 0 auto;
-	width: 100%;
+	width: auto;
+}
 
 a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
 	border: none;
@@ -76,7 +77,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 /* ~~ Change the width of the landing page here ~~ */
 .container {
-	width: 100%;
+	width: auto;
 	background: #FFF;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
@@ -102,6 +103,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	font-size: 1px;
 	line-height: 0px;
 }
+
 
 div#mc_embed_signup form {overflow: hidden; padding: 5px; border: 1px solid #fde6e2; width: 325px; background: #fde6e2;} /*area outside of email input field*/
 div#mc_embed_signup form input {display: inline; padding: 10px; font-size: 16px; border: 1px solid #fde6e2;} /*email input field border*/
@@ -145,7 +147,7 @@ div#mc_embed_signup form input#mce-EMAIL {width: 250px; font-family: BrandonGrot
 
 <div class="container">
   <div class="content">
-    <h1 align="center"><img src="modjewel.gif" width="350" height="170" alt="modjewel"></h1>
+    <h1 align="center"><img src="modjewel.gif" width="350" height="170" alt="modjewel" class="modLogo"></h1>
     <h2 align="center">Oh, hey!</h2>
     <p align="center">Your new favorite handbag brand is just around the corner.<br>Sign up below for sneak peeks and be the first to know when we're live!</p>
     </div>
