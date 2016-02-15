@@ -35,7 +35,7 @@ ul, ol, dl { /* Due to variations between browsers, it's best practices to zero 
 	padding: 0;
 	margin: 0;
 }
-h2, h3, h4, h5, h6, p {
+h3, h4, h5, h6, p {
 	font-family: BrandonGrotesqueWeb-Bold;
 	font-size:9.82pt;
 	margin-top: 5px;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
@@ -46,11 +46,17 @@ h2, h3, h4, h5, h6, p {
 h1 {
 	font-family: Bookmania-Bold;
 	font-size: 28pt;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding-right: 15px;
-	padding-left: 15px;
+	margin: 0 auto;
+	padding-top: 50px;
+	width: 100%;
 }
+
+h2 {
+	font-family: Bookmania-Bold;
+	font-size: 28pt;
+	margin: 0 auto;
+	width: 100%;
+
 a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
 	border: none;
 }
@@ -69,7 +75,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 /* ~~ Change the width of the landing page here ~~ */
 .container {
-	width: 850px;
+	width: 100%;
 	background: #FFF;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
@@ -77,6 +83,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 .content {
 
 	padding: 10px 0;
+	margin: 0 auto;
 }
 
 /* ~~ miscellaneous float/clear classes ~~ */
@@ -122,7 +129,7 @@ div#mc_embed_signup form input#mce-EMAIL {width: 250px; font-family: BrandonGrot
 <div class="container">
   <div class="content">
     <h1 align="center"><img src="modjewel.gif" width="350" height="170" alt="modjewel"></h1>
-    <h1 align="center">Oh, hey!</h1>
+    <h2 align="center">Oh, hey!</h2>
     <p align="center">Your new favorite handbag brand is just around the corner.<br>Sign up below for sneak peeks and be the first to know when we're live!</p>
     </div>
   </div>
